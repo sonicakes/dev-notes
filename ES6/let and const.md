@@ -27,7 +27,7 @@ for(var=0; i<5; i++){
 ```
 will print 5, 5 times in console, which is not what you want. The way to get around it is to run another function inside with ```j``` variable.
 
-With ```let``` however, it logs 1-5 as expected, on separate lines. ```let``` creates a new variable each time loop runs.
+With ```let``` however, it logs 0-4 as expected, on separate lines. ```let``` creates a new variable each time loop runs.
 
 ##### Explanation on StackOverflow: 
 (https://stackoverflow.com/questions/31285911/why-let-and-var-bindings-behave-differently-using-settimeout-function)
