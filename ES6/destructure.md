@@ -30,3 +30,16 @@ MDN says:
 Completely understandable.
 
 Another exercise then!
+
+Instructions were the same for the following exercise as above, except: 
+> See if you can destructure this object DIRECTLY from the parameters. The output of the printFullName 
+function should be the exact same as the displayStudentInfo function. You will have to pass in the correct parameters for this function!
+
+Okay...so apparently there is even shorter and better way to destructure. It still hard to grasp this concept, but one thing I'm taking away from this is passing exact keys we want to see:first and last. In the first example, we didn't know what will be passed as arguments.
+```javascript
+function printFullName({first,last}){
+    return `Your full name is ${first} ${last}`;
+}
+
+console.log(printFullName({first:'Elie',last:'Schoppik'}));
+```
