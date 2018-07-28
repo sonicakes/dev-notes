@@ -56,4 +56,26 @@ Math.max(...arr);//5
 var dateFields = [1970, 0, 1];  // 1 Jan 1970
 var d = new Date(...dateFields);
 ```
+### To practice the Spread! :custard:
+>Write a function called placeInMiddle which accepts two parameters, an array and another array.
+ This function should return the first array with all of the values in the second array placed in the middle of the first array.
+
+ From https://www.udemy.com/the-advanced-web-developer-bootcamp/learn/v4/t/quiz/371468
+
+```javascript
+function placeInMiddle(arr, vals){
+    //find middle of the array
+    let middleOfArray = arr.length/2;
+    console.log("length of array is " + middleOfArray);
+    //now we know the first parameter to pass into splice() method, this is our middleOfArray
+     arr.splice(middleOfArray, 0, ...vals);
+     return arr;
+}
+//testing
+console.log(placeInMiddle([1,2,6,7],[3,4,5])); // [1,2,3,4,5,6,7]
+console.log(placeInMiddle([1],[3,4,5])); // [3,4,5,1]
+console.log(placeInMiddle([1,6],[2,3,4,5])); // [1,2,3,4,5,6]
+console.log(placeInMiddle([],[2,3,4,5])); // [2,3,4,5]
+
+```
 
